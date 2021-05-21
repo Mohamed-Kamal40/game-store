@@ -1,9 +1,11 @@
 <template>
-  <div>
+  <div class="bg-white">
     <b-navbar>
       <div>
         <b-navbar-brand class="logo">
-          <b-img fluid src="../assets/image001.jpg" alt="logo"> </b-img>
+          <router-link to="/home">
+            <b-img fluid src="../assets/image001.jpg" alt="logo"> </b-img
+          ></router-link>
         </b-navbar-brand>
       </div>
       <div class="ml-auto search">
