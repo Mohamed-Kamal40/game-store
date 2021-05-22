@@ -53,7 +53,7 @@
     data() {
       return {
         baseUrl: "https://dummyapi.io/data/api",
-        appId: "60a7645d40830eba392442ef",
+        appId: "60a95835c3eb95636400b60d",
         posts: [],
         post: {},
       };

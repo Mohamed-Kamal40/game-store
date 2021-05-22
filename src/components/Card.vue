@@ -1,4 +1,4 @@
-<template>  
+<template>
   <div class="d-flex flex-column justify-content-between h-100 py-2">
     <div>
       <img :src="post.image" alt="" class="w-100 cardImg" />
@@ -9,9 +9,8 @@
       <h4>{{ post.owner.firstName }} {{ post.owner.lastName }}</h4>
       <b-button class="moreInfo w-100">
         <router-link
-          :exact="true"
           class="text-white text-decoration-none"
-          :to="'details/' + post.id"
+          :to="'/details/' + post.id"
           >MORE INFO</router-link
         ></b-button
       >
@@ -22,8 +21,22 @@
 <script>
   export default {
     name: "Card",
+    data() {
+      return {
+        link: window.location.url,
+      };
+    },
     props: {
       post: Object,
+    },
+    watch: {
+      $route() {
+        location.reload();
+      },
+      link() {
+        console.log(this.url);
+        window.location.reload();
+      },
     },
   };
 </script>
