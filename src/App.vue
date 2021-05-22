@@ -1,7 +1,7 @@
 <template>
   <div class="bg-light">
     <Header />
-      <router-view></router-view>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -16,4 +16,15 @@
   };
 </script>
 
-<style></style>
+<style>
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 700;
+  }
+  h5,
+  h6 {
+    font-weight: 400;
+  }
+</style>

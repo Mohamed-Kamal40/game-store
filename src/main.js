@@ -15,7 +15,7 @@ const router = new VueRouter({
   routes: [
     { path: "/", redirect: "/home" },
     { path: "/home", component: Home },
-    { path: "/details/:id", component: Details },
+    { path: "/details/:id", component: Details, props: true },
     { path: "**", component: NotFound },
   ],
   mode: "history",
